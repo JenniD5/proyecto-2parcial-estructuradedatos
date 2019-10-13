@@ -23,10 +23,10 @@
         <TextBlock x:Name="lblcanti" HorizontalAlignment="Left" Margin="54,89,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
         <TextBlock x:Name="lbldeccopy" HorizontalAlignment="Left" Margin="54,134,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtdscripcioncarne_Copy" HorizontalAlignment="Left" Height="23" Margin="233,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdscripcioncarne_Copy_TextChanged"/>
-        <TextBlock x:Name="extra1" HorizontalAlignment="Left" Margin="445,89,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="extra1" HorizontalAlignment="Left" Margin="445,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <ComboBox x:Name="cmbcantidd2" HorizontalAlignment="Left" Margin="640,89,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cmbcantidad" HorizontalAlignment="Left" Margin="640,187,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btngurdar" Content="Guardar" HorizontalAlignment="Left" Margin="475,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
-        <Button x:Name="btcancelar" Content="Cncelar" HorizontalAlignment="Left" Margin="660,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
+        <Button x:Name="btcancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
     </Grid>
 </UserControl>

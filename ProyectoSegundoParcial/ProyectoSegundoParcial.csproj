@@ -58,6 +58,12 @@
     <Compile Include="Carnetipopollo.xaml.cs">
       <DependentUpon>Carnetipopollo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Congelados.xaml.cs">
+      <DependentUpon>Congelados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Frutas y verduras.xaml.cs">
+      <DependentUpon>Frutas y verduras.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Restipodecarne.xaml.cs">
       <DependentUpon>Restipodecarne.xaml</DependentUpon>
     </Compile>
@@ -77,7 +83,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Congelados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Electronicos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Frutas y verduras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

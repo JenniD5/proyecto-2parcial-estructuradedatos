@@ -8,25 +8,37 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBox x:Name="txtkilos" HorizontalAlignment="Left" Height="23" Margin="237,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtkilos_TextChanged"/>
-        <TextBlock x:Name="lblc" HorizontalAlignment="Left" Margin="54,187,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
-        <TextBlock x:Name="lbextra3" HorizontalAlignment="Left" Margin="54,233,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblc" HorizontalAlignment="Left" Margin="54,187,0,0" TextWrapping="Wrap" Text="Dia que lo necesita" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbextra3" HorizontalAlignment="Left" Margin="54,233,0,0" TextWrapping="Wrap" Text="Para que será utlizado:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtdscripcioncarne" HorizontalAlignment="Left" Height="23" Margin="237,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdscripcioncarne_TextChanged"/>
-        <TextBlock x:Name="lbllugar" HorizontalAlignment="Left" Margin="445,233,0,0" TextWrapping="Wrap" Text="En donde desea encontrarla:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbllugar" HorizontalAlignment="Left" Margin="445,233,0,0" TextWrapping="Wrap" Text="Precio que espera pagar:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtlugar" HorizontalAlignment="Left" Height="23" Margin="640,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtlugar_TextChanged"/>
-        <TextBlock x:Name="lblseleccion" HorizontalAlignment="Left" Margin="52,279,0,0" TextWrapping="Wrap" Text="Seleccione la opcion que le quede mas cercana a su residencia:" VerticalAlignment="Top" RenderTransformOrigin="0.59,-0.288"/>
-        <RadioButton x:Name="lbl2" Content="Zona Metropolitana" HorizontalAlignment="Left" Margin="52,310,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="lbl4" Content="Centro" HorizontalAlignment="Left" Margin="296,310,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="lbl3" Content="Orillas" HorizontalAlignment="Left" Margin="198,310,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="extra2" HorizontalAlignment="Left" Margin="445,187,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblseleccion" HorizontalAlignment="Left" Margin="52,279,0,0" TextWrapping="Wrap" Text="Seleccione la opcion deseada " VerticalAlignment="Top" RenderTransformOrigin="0.59,-0.288"/>
+        <RadioButton x:Name="lbl2" Content="Fresco" HorizontalAlignment="Left" Margin="52,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton Visibility="Hidden" x:Name="lbl4" Content="Centro" HorizontalAlignment="Left" Margin="296,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="lbl3" Content="Congelado" HorizontalAlignment="Left" Margin="198,310,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="extra2" HorizontalAlignment="Left" Margin="445,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox x:Name="txtkilos_Copy" HorizontalAlignment="Left" Height="23" Margin="233,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtkilos_Copy_TextChanged"/>
-        <TextBlock x:Name="lblcanti" HorizontalAlignment="Left" Margin="54,89,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
-        <TextBlock x:Name="lbldeccopy" HorizontalAlignment="Left" Margin="54,134,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblcanti" HorizontalAlignment="Left" Margin="54,89,0,0" TextWrapping="Wrap" Text="Cantidad necesaria:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbldeccopy" HorizontalAlignment="Left" Margin="54,134,0,0" TextWrapping="Wrap" Text="Cadena que la vende:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtdscripcioncarne_Copy" HorizontalAlignment="Left" Height="23" Margin="233,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdscripcioncarne_Copy_TextChanged"/>
-        <TextBlock x:Name="extra1" HorizontalAlignment="Left" Margin="445,89,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbcantidd2" HorizontalAlignment="Left" Margin="640,89,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cmbcantidad" HorizontalAlignment="Left" Margin="640,187,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="extra1" HorizontalAlignment="Left" Margin="445,89,0,0" TextWrapping="Wrap" Text="Parte del pollo:" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbcantidd2" HorizontalAlignment="Left" Margin="640,89,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Alas</ComboBoxItem>
+            <ComboBoxItem>Piernas</ComboBoxItem>
+            <ComboBoxItem>Muslos</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="cmbcantidad" HorizontalAlignment="Left" Margin="640,187,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Centro</ComboBoxItem>
+            <ComboBoxItem>Sur</ComboBoxItem>
+            <ComboBoxItem>Este</ComboBoxItem>
+            
+            
+            
+        </ComboBox>
         <Button x:Name="btngurdar" Content="Guardar" HorizontalAlignment="Left" Margin="475,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
         <Button x:Name="btcancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
         <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
+        <TextBlock x:Name="lbllugar_Copy" HorizontalAlignment="Left" Margin="445,187,0,0" TextWrapping="Wrap" Text="Lugar cercano a usted:" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>

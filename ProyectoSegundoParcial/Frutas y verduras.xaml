@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Frutas_y_verduras"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
+        <TextBlock x:Name="lbproducto" HorizontalAlignment="Left" Margin="24,129,0,0" TextWrapping="Wrap" Text="Seleccione el producto deseado:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txttienda" HorizontalAlignment="Left" Height="23" Margin="176,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txttienda_TextChanged"/>
+        <TextBlock x:Name="lbpiezas" HorizontalAlignment="Left" Margin="24,166,0,0" TextWrapping="Wrap" Text="Si desea obtenerlo en piezas, seleccione el numero " VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbproducto" HorizontalAlignment="Left" Margin="219,129,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Cmbproducto_SelectionChanged">
+            <ComboBoxItem>Manzanas</ComboBoxItem>
+            <ComboBoxItem>Peras</ComboBoxItem>
+            <ComboBoxItem>Zanahorias</ComboBoxItem>
+            <ComboBoxItem>Lechuga</ComboBoxItem>
+            <ComboBoxItem>Platanos</ComboBoxItem>
+            <ComboBoxItem>Sandia</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="txtdescuento" HorizontalAlignment="Left" Height="23" Margin="54,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdescuento_TextChanged"/>
+        <TextBlock x:Name="lbdescuento" HorizontalAlignment="Left" Margin="16,395,0,0" TextWrapping="Wrap" Text="Si cuenta con algun codigo de desceunto, favor de insertarlo:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtkilo" HorizontalAlignment="Left" Height="23" Margin="399,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtkilo_TextChanged"/>
+        <TextBlock x:Name="lbkilo" HorizontalAlignment="Left" Margin="399,166,0,0" TextWrapping="Wrap" Text="Si desea obtenerlo por kilo, favor de insertarlo:" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbpiezas" HorizontalAlignment="Left" Margin="24,188,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Cmbpiezas_SelectionChanged">
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+        </ComboBox>
+        <TextBlock x:Name="lbtienda" HorizontalAlignment="Left" Margin="16,241,0,0" TextWrapping="Wrap" Text="Tienda depertamental:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtprecio" HorizontalAlignment="Left" Height="23" Margin="598,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtprecio_TextChanged"/>
+        <TextBlock x:Name="lbprecio" HorizontalAlignment="Left" Margin="401,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Precio visto en la tienda:"/>
+        <TextBox x:Name="txtpuntos" HorizontalAlignment="Left" Height="23" Margin="598,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpuntos_TextChanged"/>
+        <TextBlock x:Name="lbpuntos" HorizontalAlignment="Left" Margin="401,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Cantidad de puntos acumulados:"/>
+        <TextBlock x:Name="lbentrega" HorizontalAlignment="Left" Margin="31,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Opciones de entrega:"/>
+        <RadioButton x:Name="lb1" Content="Recoger en la tienda" HorizontalAlignment="Left" Margin="21,345,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="lb2" Content="A domicilio" HorizontalAlignment="Left" Margin="176,345,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnguardar" Content="Guardar" HorizontalAlignment="Left" Margin="475,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
+        <Button x:Name="btncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
+
+    </Grid>
+</UserControl>

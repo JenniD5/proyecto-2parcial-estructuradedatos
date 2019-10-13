@@ -105,6 +105,9 @@ namespace ProyectoSegundoParcial
                 extra2.Visibility = Visibility.Hidden;
                 cmbcantidad.Visibility = Visibility.Hidden;
                 cmbcantidd2.Visibility = Visibility.Hidden;
+                lbllugar_Copy.Visibility = Visibility.Hidden;
+                btngurdar.Visibility = Visibility.Hidden;
+                btcancelar.Visibility = Visibility.Hidden;
             }
         }
 

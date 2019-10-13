@@ -47,6 +47,14 @@ namespace ProyectoSegundoParcial
                 case 3:
                     gridprincipal.Children.Add(new CarnesFrias());
                     break;
+                case 4:
+                    gridprincipal.Children.Add(new Frutas_y_verduras());
+                    break;
+                case 5:
+                    gridprincipal.Children.Add(new Congelados());
+                    break;
+                default:
+                    break;
             }
         }
 
