@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Restipodecarne"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
+        <TextBox x:Name="txtkilos" HorizontalAlignment="Left" Height="23" Margin="237,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtkilos_TextChanged"/>
+        <TextBlock x:Name="lblc" HorizontalAlignment="Left" Margin="54,187,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbextra3" HorizontalAlignment="Left" Margin="54,233,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtdscripcioncarne" HorizontalAlignment="Left" Height="23" Margin="237,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdscripcioncarne_TextChanged"/>
+        <TextBlock x:Name="lbllugar" HorizontalAlignment="Left" Margin="445,233,0,0" TextWrapping="Wrap" Text="En donde desea encontrarla:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtlugar" HorizontalAlignment="Left" Height="23" Margin="640,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtlugar_TextChanged"/>
+        <TextBlock x:Name="lblseleccion" HorizontalAlignment="Left" Margin="52,279,0,0" TextWrapping="Wrap" Text="Seleccione la opcion que le quede mas cercana a su residencia:" VerticalAlignment="Top" RenderTransformOrigin="0.59,-0.288"/>
+        <RadioButton x:Name="lbl2" Content="Zona Metropolitana" HorizontalAlignment="Left" Margin="52,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="lbl4" Content="Centro" HorizontalAlignment="Left" Margin="296,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="lbl3" Content="Orillas" HorizontalAlignment="Left" Margin="198,310,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="extra2" HorizontalAlignment="Left" Margin="445,187,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <TextBox x:Name="txtkilos_Copy" HorizontalAlignment="Left" Height="23" Margin="233,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtkilos_Copy_TextChanged"/>
+        <TextBlock x:Name="lblcanti" HorizontalAlignment="Left" Margin="54,89,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbldeccopy" HorizontalAlignment="Left" Margin="54,134,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtdscripcioncarne_Copy" HorizontalAlignment="Left" Height="23" Margin="233,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdscripcioncarne_Copy_TextChanged"/>
+        <TextBlock x:Name="extra1" HorizontalAlignment="Left" Margin="445,89,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbcantidd2" HorizontalAlignment="Left" Margin="640,89,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbcantidad" HorizontalAlignment="Left" Margin="640,187,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btngurdar" Content="Guardar" HorizontalAlignment="Left" Margin="475,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
+        <Button x:Name="btcancelar" Content="Cncelar" HorizontalAlignment="Left" Margin="660,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
+    </Grid>
+</UserControl>

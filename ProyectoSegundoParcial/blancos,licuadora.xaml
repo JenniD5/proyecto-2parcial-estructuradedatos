@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.blancos_licuadora"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="blockpotencia" HorizontalAlignment="Left" Margin="17,114,0,0" TextWrapping="Wrap" Text="Potencia:" VerticalAlignment="Top" Height="20" Width="65"/>
+        <TextBox x:Name="txtpotencia" HorizontalAlignment="Left" Height="23" Margin="237,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_TextChanged"/>
+        <TextBlock x:Name="blockluz" HorizontalAlignment="Left" Margin="17,162,0,0" TextWrapping="Wrap" Text="Luz gastada:" VerticalAlignment="Top" Height="20" Width="95"/>
+        <TextBox x:Name="txtluz" HorizontalAlignment="Left" Height="23" Margin="237,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtluz_TextChanged"/>
+        <TextBlock x:Name="bliockacce" HorizontalAlignment="Left" Margin="17,210,0,0" TextWrapping="Wrap" Text="Numero de accesorios:" VerticalAlignment="Top" Height="20" Width="130"/>
+        <TextBox x:Name="txtpotencia_Copy" HorizontalAlignment="Left" Height="23" Margin="237,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_Copy_TextChanged"/>
+        <TextBlock x:Name="blockastas" HorizontalAlignment="Left" Margin="380,101,0,0" TextWrapping="Wrap" Text="Numero de astas:" VerticalAlignment="Top" Height="20" Width="160"/>
+        <TextBox x:Name="txtastas" HorizontalAlignment="Left" Height="23" Margin="630,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtastas_TextChanged"/>
+        <TextBlock x:Name="blmarca" HorizontalAlignment="Left" Margin="380,160,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Height="20" Width="160"/>
+        <TextBox x:Name="txtmarca" HorizontalAlignment="Left" Height="23" Margin="630,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtmarca_TextChanged"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="480,30,0,0" VerticalAlignment="Top" Width="105" Height="40" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.733"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
+        <TextBlock x:Name="txtcantidaddevasos" HorizontalAlignment="Left" Margin="380,210,0,0" TextWrapping="Wrap" Text="Cantidad  de vasos intercambiables" VerticalAlignment="Top" Height="23" Width="198"/>
+        <TextBox x:Name="txtvasos" HorizontalAlignment="Left" Height="23" Margin="630,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtvasos_TextChanged"/>
+        <Button x:Name="btncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,30,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" Height="45" Click="Btncancelar_Click_1">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.045"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+        <TextBlock x:Name="txtpreciomaximo" HorizontalAlignment="Left" Margin="15,266,0,0" TextWrapping="Wrap" Text="Precio maximo a gastar:" VerticalAlignment="Top" Visibility="Visible"/>
+        <RadioButton x:Name="precio1" Content="$500-$700" HorizontalAlignment="Left" Margin="5,360,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <RadioButton x:Name="precio2" Content="$800-$1500" HorizontalAlignment="Left" Margin="130,360,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <RadioButton x:Name="precio3" Content="$1700-en adelante" HorizontalAlignment="Left" Margin="245,360,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock x:Name="txtseleccione" HorizontalAlignment="Left" Margin="10,315,0,0" TextWrapping="Wrap" Text="En caso de no saber con exactitud seleccione uno de los siguientes rangos:" VerticalAlignment="Top" Height="15" Width="405" Visibility="Visible"/>
+        <TextBlock x:Name="txtformadepago" HorizontalAlignment="Left" Margin="13,417,0,0" TextWrapping="Wrap" Text="Forma de pago:" VerticalAlignment="Top" Width="92" Visibility="Visible"/>
+        <ComboBox x:Name="cbformadepago" HorizontalAlignment="Left" Margin="110,417,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
+            <ComboBoxItem>Targeta</ComboBoxItem>
+            <ComboBoxItem>Efectivo</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="pago" HorizontalAlignment="Left" Margin="165,260,0,0" VerticalAlignment="Top" Width="150" Visibility="Visible" RenderTransformOrigin="0.333,0.214" Height="22" SelectionChanged="Pago_SelectionChanged">
+            <ComboBoxItem Content="Seleccionar"/>
+            <ComboBoxItem Content="Agregar por cuenta propia"/>
+
+        </ComboBox>
+        <TextBox x:Name="txtpotencia_Copy1" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="345,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_Copy_TextChanged"/>
+    </Grid>
+</UserControl>
