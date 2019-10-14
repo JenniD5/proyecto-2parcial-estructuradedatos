@@ -9,37 +9,37 @@
     <Grid>
         <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
         <Label Name="lblcongelados" Content="Congelados" HorizontalAlignment="Left" Margin="45,87,0,0" VerticalAlignment="Top" Height="35" Width="85"/>
-        <Label Name="lbl9" Content="Lacteos" HorizontalAlignment="Left" Margin="600,87,0,0" VerticalAlignment="Top" Height="35" Width="85"/>
+        <Label Name="lbl9" Content="Lacteos" HorizontalAlignment="Left" Margin="605,35,0,0" VerticalAlignment="Top" Height="35" Width="85"/>
         <CheckBox x:Name="lbl2" Content="Fruta" HorizontalAlignment="Left" Margin="25,158,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="lbl4" Content="Helados" HorizontalAlignment="Left" Margin="203,158,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="lbl3" Content="Comida" HorizontalAlignment="Left" Margin="120,158,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="lbl11" Content="Yogurt" HorizontalAlignment="Left" Margin="475,155,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Leche" x:Name="lbl12" HorizontalAlignment="Left" Margin="680,155,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="lbl13" Content="Crema y dev." HorizontalAlignment="Left" Margin="560,155,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="lbl11" Content="Yogurt" HorizontalAlignment="Left" Margin="480,103,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Leche" x:Name="lbl12" HorizontalAlignment="Left" Margin="685,103,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="lbl13" Content="Crema y dev." HorizontalAlignment="Left" Margin="565,103,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="lbl1" HorizontalAlignment="Left" Margin="25,122,0,0" TextWrapping="Wrap" Text="Productos del area que desa comprar" VerticalAlignment="Top" Height="31" Width="205"/>
-        <TextBlock x:Name="lbl10" HorizontalAlignment="Left" Margin="525,119,0,0" TextWrapping="Wrap" Text="Productos del area que desa comprar" VerticalAlignment="Top" Height="31" Width="205"/>
+        <TextBlock x:Name="lbl10" HorizontalAlignment="Left" Margin="530,67,0,0" TextWrapping="Wrap" Text="Productos del area que desa comprar" VerticalAlignment="Top" Height="31" Width="205"/>
         <TextBlock x:Name="lbl5" HorizontalAlignment="Left" Margin="25,206,0,0" TextWrapping="Wrap" Text="Cantidad de productos:" VerticalAlignment="Top" Height="31" Width="205"/>
-        <TextBox x:Name="txtcant1" HorizontalAlignment="Left" Height="23" Margin="225,205,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" TextChanged="Txtcant1_TextChanged"/>
-        <TextBlock x:Name="lbl14" HorizontalAlignment="Left" Margin="480,206,0,0" TextWrapping="Wrap" Text="Cantidad de productos:" VerticalAlignment="Top" Height="31" Width="168"/>
-        <TextBox x:Name="txtcan2" HorizontalAlignment="Left" Height="23" Margin="675,205,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" TextChanged="Txtcan2_TextChanged"/>
+        <TextBox x:Name="txtcant1" HorizontalAlignment="Left" Height="23" Margin="225,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextChanged="Txtcant1_TextChanged"/>
+        <TextBlock x:Name="lbl14" HorizontalAlignment="Left" Margin="485,154,0,0" TextWrapping="Wrap" Text="Cantidad de productos:" VerticalAlignment="Top" Height="31" Width="168"/>
+        <TextBox x:Name="txtcan2" HorizontalAlignment="Left" Height="23" Margin="680,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextChanged="Txtcan2_TextChanged"/>
         <TextBlock x:Name="lbl6" HorizontalAlignment="Left" Margin="30,243,0,0" TextWrapping="Wrap" Text="Cantidad de gramos que contiene:" VerticalAlignment="Top" Height="31" Width="190"/>
-        <TextBox x:Name="txtcant3" HorizontalAlignment="Left" Height="23" Margin="225,242,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" TextChanged="Txtcant3_TextChanged"/>
-        <TextBlock x:Name="lbl15" HorizontalAlignment="Left" Margin="480,243,0,0" TextWrapping="Wrap" Text="Porcentaje promedio de calorias:" VerticalAlignment="Top" Height="31" Width="205"/>
-        <TextBox x:Name="txtcant4" HorizontalAlignment="Left" Height="23" Margin="675,242,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" TextChanged="Txtcant4_TextChanged"/>
-        <TextBlock x:Name="lbl16" HorizontalAlignment="Left" Margin="480,280,0,0" TextWrapping="Wrap" Text="Bajo en sodio:" VerticalAlignment="Top" Height="31" Width="95"/>
-        <TextBox x:Name="txtcant6" HorizontalAlignment="Left" Height="23" Margin="225,368,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.565" TextChanged="Txtcant6_TextChanged"/>
-        <ComboBox x:Name="cbm1" HorizontalAlignment="Left" Margin="675,279,0,0" VerticalAlignment="Top" Width="55">
+        <TextBox x:Name="txtcant3" HorizontalAlignment="Left" Height="23" Margin="225,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextChanged="Txtcant3_TextChanged"/>
+        <TextBlock x:Name="lbl15" HorizontalAlignment="Left" Margin="485,191,0,0" TextWrapping="Wrap" Text="Porcentaje promedio de calorias:" VerticalAlignment="Top" Height="31" Width="205"/>
+        <TextBox x:Name="txtcant4" HorizontalAlignment="Left" Height="23" Margin="680,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextChanged="Txtcant4_TextChanged"/>
+        <TextBlock x:Name="lbl16" HorizontalAlignment="Left" Margin="485,228,0,0" TextWrapping="Wrap" Text="Bajo en sodio:" VerticalAlignment="Top" Height="31" Width="95"/>
+        <TextBox x:Name="txtcant6" HorizontalAlignment="Left" Height="23" Margin="225,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.565" TextChanged="Txtcant6_TextChanged"/>
+        <ComboBox x:Name="cbm1" HorizontalAlignment="Left" Margin="680,227,0,0" VerticalAlignment="Top" Width="55">
             <ComboBoxItem>Si</ComboBoxItem>
             <ComboBoxItem>No</ComboBoxItem>
         </ComboBox>
         <TextBlock x:Name="lbl7" HorizontalAlignment="Left" Margin="30,289,0,0" TextWrapping="Wrap" Text="Si son paletas heladas, favor de poner el numero que ocntiene el empaque:" VerticalAlignment="Top" Height="48" Width="190"/>
-        <TextBox x:Name="txtcant5" HorizontalAlignment="Left" Height="23" Margin="225,288,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" TextChanged="Txtcant5_TextChanged"/>
+        <TextBox x:Name="txtcant5" HorizontalAlignment="Left" Height="23" Margin="225,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextChanged="Txtcant5_TextChanged"/>
         <TextBlock x:Name="lbl8" HorizontalAlignment="Left" Margin="30,368,0,0" TextWrapping="Wrap" Text="Grados en los que se encontrara" VerticalAlignment="Top" Height="54" Width="100"/>
-        <RadioButton x:Name="lbl20" Content="Normal" HorizontalAlignment="Left" Margin="480,391,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="lbl21" Content="Light" HorizontalAlignment="Left" Margin="620,391,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="lbl17" HorizontalAlignment="Left" Margin="480,340,0,0" TextWrapping="Wrap" Text="Estandar de grasas:" VerticalAlignment="Top" Height="31" Width="130"/>
-        <Button x:Name="btnguardar" Content="Guardar" HorizontalAlignment="Left" Margin="490,25,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
-        <Button x:Name="btncan" Content="Cancelar" HorizontalAlignment="Left" Margin="650,26,0,0" VerticalAlignment="Top" Width="95" Height="34" Click="Btncan_Click"/>
+        <RadioButton x:Name="lbl20" Content="Normal" HorizontalAlignment="Left" Margin="485,339,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="lbl21" Content="Light" HorizontalAlignment="Left" Margin="625,339,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbl17" HorizontalAlignment="Left" Margin="485,288,0,0" TextWrapping="Wrap" Text="Estandar de grasas:" VerticalAlignment="Top" Height="31" Width="130"/>
+        <Button x:Name="btnguardar" Content="Guardar" HorizontalAlignment="Left" Margin="480,399,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
+        <Button x:Name="btncan" Content="Cancelar" HorizontalAlignment="Left" Margin="640,400,0,0" VerticalAlignment="Top" Width="95" Height="34" Click="Btncan_Click"/>
 
     </Grid>
 </UserControl>

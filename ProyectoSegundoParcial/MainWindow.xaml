@@ -15,7 +15,7 @@
             <ComboBoxItem>Carnes frias</ComboBoxItem>
             <ComboBoxItem>Frutas y verduras</ComboBoxItem>
             <ComboBoxItem>Lacteos y Congelados</ComboBoxItem>
-            <ComboBoxItem>Congelados</ComboBoxItem>
+            <ComboBoxItem>Higiene Personal</ComboBoxItem>
         </ComboBox>
         <Button x:Name="btnagregar" Content="Agregar" HorizontalAlignment="Left" Margin="670,50,0,0" VerticalAlignment="Top" Width="105" Height="40" FontSize="20" Click="Btnagregar_Click"/>
         <Grid x:Name="gridprincipal" HorizontalAlignment="Left" Height="495" Margin="65,150,0,0" VerticalAlignment="Top" Width="815">

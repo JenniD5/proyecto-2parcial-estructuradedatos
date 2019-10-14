@@ -10,11 +10,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="30,20,0,0" TextWrapping="Wrap" Text="Electrodomesticos:" VerticalAlignment="Top"/>
         <ComboBox x:Name="cmbelectrodomesticos_" HorizontalAlignment="Left" Margin="165,20,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Cmbelectrodomesticos__SelectionChanged">
             <ComboBoxItem>Licuadoras</ComboBoxItem>
-            <ComboBoxItem>Estufas</ComboBoxItem>
-            <ComboBoxItem>Hornos</ComboBoxItem>
+            
         </ComboBox>
         <Grid x:Name="gridelectrodomesticos" HorizontalAlignment="Left" Height="385" Margin="25,55,0,0" VerticalAlignment="Top" Width="765">
-            
+           
+
         </Grid>
        
 

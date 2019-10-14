@@ -32,13 +32,16 @@
             <ComboBoxItem>Centro</ComboBoxItem>
             <ComboBoxItem>Sur</ComboBoxItem>
             <ComboBoxItem>Este</ComboBoxItem>
-            
-            
-            
+
+
+
         </ComboBox>
-        <Button x:Name="btngurdar" Content="Guardar" HorizontalAlignment="Left" Margin="475,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
-        <Button x:Name="btcancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
+        <Button x:Name="btngurdar" Content="Guardar" HorizontalAlignment="Left" Margin="455,290,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
+        <Button x:Name="btcancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="640,290,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
         <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
         <TextBlock x:Name="lbllugar_Copy" HorizontalAlignment="Left" Margin="445,187,0,0" TextWrapping="Wrap" Text="Lugar cercano a usted:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="extraaa" HorizontalAlignment="Left" Margin="445,121,0,0" TextWrapping="Wrap" Text="Parte del pollo(extra)" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c12" Content="patas" HorizontalAlignment="Left" Margin="455,149,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c22" Content="corazon" HorizontalAlignment="Left" Margin="600,152,0,0" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>

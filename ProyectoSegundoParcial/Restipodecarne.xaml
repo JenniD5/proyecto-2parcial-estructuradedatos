@@ -9,7 +9,7 @@
     <Grid>
         <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
         <TextBox x:Name="txtkilos" HorizontalAlignment="Left" Height="23" Margin="237,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtkilos_TextChanged"/>
-        <TextBlock x:Name="lblc" HorizontalAlignment="Left" Margin="54,187,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblc" HorizontalAlignment="Left" Margin="54,187,0,0" TextWrapping="Wrap" Text="Corte deseado:" VerticalAlignment="Top"/>
         <TextBlock x:Name="lbextra3" HorizontalAlignment="Left" Margin="54,233,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtdscripcioncarne" HorizontalAlignment="Left" Height="23" Margin="237,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdscripcioncarne_TextChanged"/>
         <TextBlock x:Name="lbllugar" HorizontalAlignment="Left" Margin="445,233,0,0" TextWrapping="Wrap" Text="En donde desea encontrarla:" VerticalAlignment="Top"/>
@@ -18,15 +18,27 @@
         <RadioButton x:Name="lbl2" Content="Zona Metropolitana" HorizontalAlignment="Left" Margin="52,310,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="lbl4" Content="Centro" HorizontalAlignment="Left" Margin="296,310,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="lbl3" Content="Orillas" HorizontalAlignment="Left" Margin="198,310,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="extra2" HorizontalAlignment="Left" Margin="445,187,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="extra2" HorizontalAlignment="Left" Margin="445,187,0,0" TextWrapping="Wrap" Text="Cocida: " VerticalAlignment="Top"/>
         <TextBox x:Name="txtkilos_Copy" HorizontalAlignment="Left" Height="23" Margin="233,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtkilos_Copy_TextChanged"/>
         <TextBlock x:Name="lblcanti" HorizontalAlignment="Left" Margin="54,89,0,0" TextWrapping="Wrap" Text="Cantidad requerida: " VerticalAlignment="Top"/>
-        <TextBlock x:Name="lbldeccopy" HorizontalAlignment="Left" Margin="54,134,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbldeccopy" HorizontalAlignment="Left" Margin="54,134,0,0" TextWrapping="Wrap" Text="Tipo de carne deseada:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtdscripcioncarne_Copy" HorizontalAlignment="Left" Height="23" Margin="233,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtdscripcioncarne_Copy_TextChanged"/>
         <TextBlock x:Name="extra1" HorizontalAlignment="Left" Margin="445,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbcantidd2" HorizontalAlignment="Left" Margin="640,89,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cmbcantidad" HorizontalAlignment="Left" Margin="640,187,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btngurdar" Content="Guardar" HorizontalAlignment="Left" Margin="475,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
-        <Button x:Name="btcancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,32,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
+        <ComboBox x:Name="cmbcantidd2" HorizontalAlignment="Left" Margin="640,89,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>si</ComboBoxItem>
+            <ComboBoxItem>no</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="cmbcantidad" HorizontalAlignment="Left" Margin="640,187,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Si, bien cocido</ComboBoxItem>
+            <ComboBoxItem>Si, termino medio
+            </ComboBoxItem>
+            <ComboBoxItem>No</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btngurdar" Content="Guardar" HorizontalAlignment="Left" Margin="475,288,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btngurdar_Click"/>
+        <Button x:Name="btcancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,288,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Btcancelar_Click"/>
+        <TextBlock x:Name="extra2_Copy" HorizontalAlignment="Left" Margin="450,95,0,0" TextWrapping="Wrap" Text="Cortado en trozos " VerticalAlignment="Top"/>
+        <TextBlock x:Name="extra1_Copy" HorizontalAlignment="Left" Margin="445,133,0,0" TextWrapping="Wrap" Text="Partes deseadas:" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c1" Content="Patas" HorizontalAlignment="Left" Margin="445,158,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c2" Content="Cabeza" HorizontalAlignment="Left" Margin="544,158,0,0" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>

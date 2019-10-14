@@ -59,22 +59,7 @@ namespace ProyectoSegundoParcial
                 return;
 
             }
-            else if (string.IsNullOrEmpty(cmbpiezas.Text))
-            {
-
-                txtdesaparecer.Visibility = Visibility.Visible;
-
-                return;
-
-            }
-            else if (string.IsNullOrEmpty(cmbproducto.Text))
-            {
-
-                txtdesaparecer.Visibility = Visibility.Visible;
-
-                return;
-
-            }
+            
             else
             {
 
@@ -99,6 +84,12 @@ namespace ProyectoSegundoParcial
                 lbtienda.Visibility = Visibility.Hidden;
                 btncancelar.Visibility = Visibility.Hidden;
                 btnguardar.Visibility = Visibility.Hidden;
+                c1.Visibility = Visibility.Hidden;
+                c2.Visibility = Visibility.Hidden;
+                c3.Visibility = Visibility.Hidden;
+                lbpuntos_Copy.Visibility = Visibility.Hidden;
+
+
             }
 
 
@@ -111,7 +102,31 @@ namespace ProyectoSegundoParcial
             txtprecio.Text = "";
             txtpuntos.Text = "";
             txttienda.Text = "";
-
+            txtdesaparecer.Visibility = Visibility.Hidden;
+            MessageBox.Show("Usted va a cancelar el proceso");
+            txtkilo.Visibility = Visibility.Hidden;
+            txtdescuento.Visibility = Visibility.Hidden;
+            txtprecio.Visibility = Visibility.Hidden;
+            txtpuntos.Visibility = Visibility.Hidden;
+            txttienda.Visibility = Visibility.Hidden;
+            cmbpiezas.Visibility = Visibility.Hidden;
+            cmbproducto.Visibility = Visibility.Hidden;
+            lb1.Visibility = Visibility.Hidden;
+            lb2.Visibility = Visibility.Hidden;
+            lbdescuento.Visibility = Visibility.Hidden;
+            lbentrega.Visibility = Visibility.Hidden;
+            lbkilo.Visibility = Visibility.Hidden;
+            lbpiezas.Visibility = Visibility.Hidden;
+            lbprecio.Visibility = Visibility.Hidden;
+            lbproducto.Visibility = Visibility.Hidden;
+            lbpuntos.Visibility = Visibility.Hidden;
+            lbtienda.Visibility = Visibility.Hidden;
+            btncancelar.Visibility = Visibility.Hidden;
+            btnguardar.Visibility = Visibility.Hidden;
+            c1.Visibility = Visibility.Hidden;
+            c2.Visibility = Visibility.Hidden;
+            c3.Visibility = Visibility.Hidden;
+            lbpuntos_Copy.Visibility = Visibility.Hidden;
         }
 
         private void Cmbproducto_SelectionChanged(object sender, SelectionChangedEventArgs e)

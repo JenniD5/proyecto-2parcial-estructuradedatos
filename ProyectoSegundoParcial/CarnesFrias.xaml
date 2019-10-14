@@ -8,8 +8,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <ComboBox x:Name="cmbCarnes" HorizontalAlignment="Left" Margin="125,30,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbCarnes_SelectionChanged">
-            <ComboBoxItem>Pollo</ComboBoxItem>
             <ComboBoxItem>Res</ComboBoxItem>
+            <ComboBoxItem>Pollo</ComboBoxItem>
 
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="31,36,0,0" TextWrapping="Wrap" Text="Tipo de carne " VerticalAlignment="Top"/>

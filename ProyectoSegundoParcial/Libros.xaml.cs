@@ -25,7 +25,7 @@ namespace ProyectoSegundoParcial
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        /*private void Button_Click(object sender, RoutedEventArgs e)
         {
 
             if (string.IsNullOrEmpty(txtaño.Text))
@@ -89,13 +89,13 @@ namespace ProyectoSegundoParcial
                 txtaño.Visibility = Visibility.Hidden;
                 cmbcantidadlibros.Visibility = Visibility.Hidden;
                 btncancelar.Visibility = Visibility.Hidden;
-                
 
 
 
 
-            }
-        }
+
+            }*/
+        
 
         private void Btncancelar_Click(object sender, RoutedEventArgs e)
         {
@@ -105,7 +105,38 @@ namespace ProyectoSegundoParcial
             txttitulo.Text = "";
             txtedicion.Text = "";
             txtaño.Text = "";
-
+            txtdesaparecer.Visibility = Visibility.Hidden;
+            MessageBox.Show("Usted va a cancelar el proceso");
+            txttitulo.Visibility = Visibility.Hidden;
+            txtpaginas_Copy.Visibility = Visibility.Hidden;
+            txtpaginas.Visibility = Visibility.Hidden;
+            txtedicion.Visibility = Visibility.Hidden;
+            txtcolor.Visibility = Visibility.Hidden;
+            lblaño.Visibility = Visibility.Hidden;
+            lblcantidad.Visibility = Visibility.Hidden;
+            lblcolor.Visibility = Visibility.Hidden;
+            lbledicion.Visibility = Visibility.Hidden;
+            lblgenero.Visibility = Visibility.Hidden;
+            lblpaginas.Visibility = Visibility.Hidden;
+            lblpopularidad.Visibility = Visibility.Hidden;
+            lblsubgenero.Visibility = Visibility.Hidden;
+            lbltitulo.Visibility = Visibility.Hidden;
+            _1.Visibility = Visibility.Hidden;
+            _2.Visibility = Visibility.Hidden;
+            _3.Visibility = Visibility.Hidden;
+            _4.Visibility = Visibility.Hidden;
+            _5.Visibility = Visibility.Hidden;
+            _6.Visibility = Visibility.Hidden;
+            _7.Visibility = Visibility.Hidden;
+            txtaño.Visibility = Visibility.Hidden;
+            cmbcantidadlibros.Visibility = Visibility.Hidden;
+            btncancelar.Visibility = Visibility.Hidden;
+            btnguardar.Visibility = Visibility.Hidden;
+            cmbpopularidad.Visibility = Visibility.Hidden;
+            c1.Visibility = Visibility.Hidden;
+            c2.Visibility = Visibility.Hidden;
+            c3.Visibility = Visibility.Hidden;
+            lblaño_Copy.Visibility = Visibility.Hidden;
 
         }
 
@@ -137,6 +168,80 @@ namespace ProyectoSegundoParcial
         private void Txtedicion_TextChanged(object sender, TextChangedEventArgs e)
         {
             txtdesaparecer.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtaño.Text))
+            {
+
+                txtdesaparecer.Visibility = Visibility.Visible;
+
+                return;
+
+            }
+            else if (string.IsNullOrEmpty(txtcolor.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtedicion.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtpaginas.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtpaginas_Copy.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (string.IsNullOrEmpty(txttitulo.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+            else
+            {
+                txtdesaparecer.Visibility = Visibility.Hidden;
+                MessageBox.Show("se a guardado con exito");
+                txttitulo.Visibility = Visibility.Hidden;
+                txtpaginas_Copy.Visibility = Visibility.Hidden;
+                txtpaginas.Visibility = Visibility.Hidden;
+                txtedicion.Visibility = Visibility.Hidden;
+                txtcolor.Visibility = Visibility.Hidden;
+                lblaño.Visibility = Visibility.Hidden;
+                lblcantidad.Visibility = Visibility.Hidden;
+                lblcolor.Visibility = Visibility.Hidden;
+                lbledicion.Visibility = Visibility.Hidden;
+                lblgenero.Visibility = Visibility.Hidden;
+                lblpaginas.Visibility = Visibility.Hidden;
+                lblpopularidad.Visibility = Visibility.Hidden;
+                lblsubgenero.Visibility = Visibility.Hidden;
+                lbltitulo.Visibility = Visibility.Hidden;
+                _1.Visibility = Visibility.Hidden;
+                _2.Visibility = Visibility.Hidden;
+                _3.Visibility = Visibility.Hidden;
+                _4.Visibility = Visibility.Hidden;
+                _5.Visibility = Visibility.Hidden;
+                _6.Visibility = Visibility.Hidden;
+                _7.Visibility = Visibility.Hidden;
+                txtaño.Visibility = Visibility.Hidden;
+                cmbcantidadlibros.Visibility = Visibility.Hidden;
+                btncancelar.Visibility = Visibility.Hidden;
+                btnguardar.Visibility = Visibility.Hidden;
+                cmbpopularidad.Visibility = Visibility.Hidden;
+                c1.Visibility = Visibility.Hidden;
+                c2.Visibility = Visibility.Hidden;
+                c3.Visibility = Visibility.Hidden;
+                lblaño_Copy.Visibility = Visibility.Hidden;
+
+
+            }
         }
     }
 }

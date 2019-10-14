@@ -123,6 +123,37 @@ namespace ProyectoSegundoParcial
             txtcant4.Text = "";
             txtcant5.Text = "";
             txtcant6.Text = "";
+            txtdesaparecer.Visibility = Visibility.Hidden;
+            MessageBox.Show("Usted va a cancelar el proceso");
+            txtcan2.Visibility = Visibility.Hidden;
+            txtcant1.Visibility = Visibility.Hidden;
+            txtcant3.Visibility = Visibility.Hidden;
+            txtcant4.Visibility = Visibility.Hidden;
+            txtcant5.Visibility = Visibility.Hidden;
+            txtcant6.Visibility = Visibility.Hidden;
+            lbl1.Visibility = Visibility.Hidden;
+            lbl10.Visibility = Visibility.Hidden;
+            lbl11.Visibility = Visibility.Hidden;
+            lbl12.Visibility = Visibility.Hidden;
+            lbl13.Visibility = Visibility.Hidden;
+            lbl14.Visibility = Visibility.Hidden;
+            lbl15.Visibility = Visibility.Hidden;
+            lbl16.Visibility = Visibility.Hidden;
+            lbl17.Visibility = Visibility.Hidden;
+            lbl2.Visibility = Visibility.Hidden;
+            lbl21.Visibility = Visibility.Hidden;
+            lbl20.Visibility = Visibility.Hidden;
+            lbl3.Visibility = Visibility.Hidden;
+            lbl4.Visibility = Visibility.Hidden;
+            lbl5.Visibility = Visibility.Hidden;
+            lbl6.Visibility = Visibility.Hidden;
+            lbl7.Visibility = Visibility.Hidden;
+            lbl8.Visibility = Visibility.Hidden;
+            lbl9.Visibility = Visibility.Hidden;
+            cbm1.Visibility = Visibility.Hidden;
+            btncan.Visibility = Visibility.Hidden;
+            btnguardar.Visibility = Visibility.Hidden;
+            lblcongelados.Visibility = Visibility.Hidden;
         }
 
         private void Txtcant1_TextChanged(object sender, TextChangedEventArgs e)

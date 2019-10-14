@@ -26,90 +26,8 @@ namespace ProyectoSegundoParcial
         }
 
         
-        private void Button_Click(object sender, RoutedEventArgs e)  //
-        {
-            if (string.IsNullOrEmpty(txtpotencia.Text))
-            {
-
-                txtdesaparecer.Visibility = Visibility.Visible;
-
-                return;
-
-            }
-
-            //aqui pondrias el codigo de guardar
-            else if (string.IsNullOrEmpty(txtastas.Text))
-            {
-                txtdesaparecer.Visibility = Visibility.Visible;
-                return;
-            }
-            else if (string.IsNullOrEmpty(txtmarca.Text))
-            {
-                txtdesaparecer.Visibility = Visibility.Visible;
-                return;
-            }
-
-            else if (string.IsNullOrEmpty(txtpotencia.Text))
-            {
-                txtdesaparecer.Visibility = Visibility.Visible;
-                return;
-            }
-
-            else if (string.IsNullOrEmpty(txtpotencia_Copy.Text))
-            {
-                txtdesaparecer.Visibility = Visibility.Visible;
-                return;
-            }
-
-            else if (string.IsNullOrEmpty(txtvasos.Text))
-            {
-                txtdesaparecer.Visibility = Visibility.Visible;
-                return;
-            }
-
-            else
-            {
-                txtdesaparecer.Visibility = Visibility.Hidden;
-                MessageBox.Show("se a guardado con exito");
-                txtastas.Visibility = Visibility.Hidden;  
-                txtluz.Visibility = Visibility.Hidden;
-                txtmarca.Visibility = Visibility.Hidden;
-                txtpotencia.Visibility = Visibility.Hidden;
-                txtpotencia_Copy.Visibility = Visibility.Hidden;
-                txtvasos.Visibility = Visibility.Hidden;
-                txtcantidaddevasos.Visibility = Visibility.Hidden;
-                txtformadepago.Visibility = Visibility.Hidden;
-                txtpreciomaximo.Visibility = Visibility.Hidden;
-                txtseleccione.Visibility = Visibility.Hidden;
-                precio1.Visibility = Visibility.Hidden;
-                precio2.Visibility = Visibility.Hidden;
-                precio3.Visibility = Visibility.Hidden;
-                txtseleccione.Visibility = Visibility.Hidden;
-                bliockacce.Visibility = Visibility.Hidden;
-                blockluz.Visibility = Visibility.Hidden;
-                blockpotencia.Visibility = Visibility.Hidden;
-                blockastas.Visibility = Visibility.Hidden;
-                blmarca.Visibility = Visibility.Hidden;
-                cbformadepago.Visibility = Visibility.Hidden;
-                txtpotencia_Copy1.Visibility = Visibility.Hidden;
-                pago.Visibility = Visibility.Hidden;
-
-
-
-            }
-
-        }
-
-        private void Btncancelar_Click(object sender, RoutedEventArgs e)
-        {
-            txtastas.Text = "";
-            txtluz.Text = "";
-            txtmarca.Text = "";
-            txtpotencia.Text = "";
-            txtpotencia_Copy.Text = "";
-            txtvasos.Text = "";
-
-        }
+        
+        
 
         private void Txtpotencia_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -170,9 +88,118 @@ namespace ProyectoSegundoParcial
             txtmarca.Text = "";
             txtvasos.Text = "";
             txtpotencia_Copy1.Text = "";
-            
+            txtdesaparecer.Visibility = Visibility.Hidden;
+            MessageBox.Show("Usted va a cancelar el proceso");
+            txtastas.Visibility = Visibility.Hidden;
+            txtluz.Visibility = Visibility.Hidden;
+            txtmarca.Visibility = Visibility.Hidden;
+            txtpotencia.Visibility = Visibility.Hidden;
+            txtpotencia_Copy.Visibility = Visibility.Hidden;
+            txtvasos.Visibility = Visibility.Hidden;
+            txtcantidaddevasos.Visibility = Visibility.Hidden;
+            txtformadepago.Visibility = Visibility.Hidden;
+            txtpreciomaximo.Visibility = Visibility.Hidden;
+            txtseleccione.Visibility = Visibility.Hidden;
+            precio1.Visibility = Visibility.Hidden;
+            precio2.Visibility = Visibility.Hidden;
+            precio3.Visibility = Visibility.Hidden;
+            txtseleccione.Visibility = Visibility.Hidden;
+            bliockacce.Visibility = Visibility.Hidden;
+            blockluz.Visibility = Visibility.Hidden;
+            blockpotencia.Visibility = Visibility.Hidden;
+            blockastas.Visibility = Visibility.Hidden;
+            blmarca.Visibility = Visibility.Hidden;
+            cbformadepago.Visibility = Visibility.Hidden;
+            txtpotencia_Copy1.Visibility = Visibility.Hidden;
+            pago.Visibility = Visibility.Hidden;
+            btncancelar.Visibility = Visibility.Hidden;
+            btnguardar.Visibility = Visibility.Hidden;
+            txtpreciomaximo_Copy.Visibility = Visibility.Hidden;
+            c1.Visibility = Visibility.Hidden;
+            c2.Visibility = Visibility.Hidden;
+            c3.Visibility = Visibility.Hidden;
 
 
+
+
+        }
+
+        private void Btnguardar_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtpotencia.Text))
+            {
+
+                txtdesaparecer.Visibility = Visibility.Visible;
+
+                return;
+
+            }
+
+            //aqui pondrias el codigo de guardar
+            else if (string.IsNullOrEmpty(txtastas.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtmarca.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+
+            else if (string.IsNullOrEmpty(txtpotencia.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+
+            else if (string.IsNullOrEmpty(txtpotencia_Copy.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+
+            else if (string.IsNullOrEmpty(txtvasos.Text))
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+                return;
+            }
+
+            else
+            {
+                txtdesaparecer.Visibility = Visibility.Hidden;
+                MessageBox.Show("se a guardado con exito");
+                txtastas.Visibility = Visibility.Hidden;
+                txtluz.Visibility = Visibility.Hidden;
+                txtmarca.Visibility = Visibility.Hidden;
+                txtpotencia.Visibility = Visibility.Hidden;
+                txtpotencia_Copy.Visibility = Visibility.Hidden;
+                txtvasos.Visibility = Visibility.Hidden;
+                txtcantidaddevasos.Visibility = Visibility.Hidden;
+                txtformadepago.Visibility = Visibility.Hidden;
+                txtpreciomaximo.Visibility = Visibility.Hidden;
+                txtseleccione.Visibility = Visibility.Hidden;
+                precio1.Visibility = Visibility.Hidden;
+                precio2.Visibility = Visibility.Hidden;
+                precio3.Visibility = Visibility.Hidden;
+                txtseleccione.Visibility = Visibility.Hidden;
+                bliockacce.Visibility = Visibility.Hidden;
+                blockluz.Visibility = Visibility.Hidden;
+                blockpotencia.Visibility = Visibility.Hidden;
+                blockastas.Visibility = Visibility.Hidden;
+                blmarca.Visibility = Visibility.Hidden;
+                cbformadepago.Visibility = Visibility.Hidden;
+                txtpotencia_Copy1.Visibility = Visibility.Hidden;
+                pago.Visibility = Visibility.Hidden;
+                btncancelar.Visibility = Visibility.Hidden;
+                btnguardar.Visibility = Visibility.Hidden;
+                txtpreciomaximo_Copy.Visibility = Visibility.Hidden;
+                c1.Visibility = Visibility.Hidden;
+                c2.Visibility = Visibility.Hidden;
+                c3.Visibility = Visibility.Hidden;
+
+
+            }
         }
     }
 }

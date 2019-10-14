@@ -11,55 +11,51 @@
             <RowDefinition/>
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="blockpotencia" HorizontalAlignment="Left" Margin="17,114,0,0" TextWrapping="Wrap" Text="Potencia:" VerticalAlignment="Top" Height="20" Width="65"/>
-        <TextBox x:Name="txtpotencia" HorizontalAlignment="Left" Height="23" Margin="237,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_TextChanged"/>
-        <TextBlock x:Name="blockluz" HorizontalAlignment="Left" Margin="17,162,0,0" TextWrapping="Wrap" Text="Luz gastada:" VerticalAlignment="Top" Height="20" Width="95"/>
-        <TextBox x:Name="txtluz" HorizontalAlignment="Left" Height="23" Margin="237,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtluz_TextChanged"/>
-        <TextBlock x:Name="bliockacce" HorizontalAlignment="Left" Margin="17,210,0,0" TextWrapping="Wrap" Text="Numero de accesorios:" VerticalAlignment="Top" Height="20" Width="130"/>
-        <TextBox x:Name="txtpotencia_Copy" HorizontalAlignment="Left" Height="23" Margin="237,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_Copy_TextChanged"/>
+        <TextBlock x:Name="blockpotencia" HorizontalAlignment="Left" Margin="23,94,0,0" TextWrapping="Wrap" Text="Potencia:" VerticalAlignment="Top" Height="20" Width="65"/>
+        <TextBox x:Name="txtpotencia" HorizontalAlignment="Left" Height="23" Margin="243,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_TextChanged"/>
+        <TextBlock x:Name="blockluz" HorizontalAlignment="Left" Margin="23,142,0,0" TextWrapping="Wrap" Text="Luz gastada:" VerticalAlignment="Top" Height="20" Width="95"/>
+        <TextBox x:Name="txtluz" HorizontalAlignment="Left" Height="23" Margin="243,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtluz_TextChanged"/>
+        <TextBlock x:Name="bliockacce" HorizontalAlignment="Left" Margin="23,168,0,0" TextWrapping="Wrap" Text="Numero de accesorios:" VerticalAlignment="Top" Height="20" Width="130"/>
+        <TextBox x:Name="txtpotencia_Copy" HorizontalAlignment="Left" Height="23" Margin="243,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_Copy_TextChanged"/>
         <TextBlock x:Name="blockastas" HorizontalAlignment="Left" Margin="380,101,0,0" TextWrapping="Wrap" Text="Numero de astas:" VerticalAlignment="Top" Height="20" Width="160"/>
         <TextBox x:Name="txtastas" HorizontalAlignment="Left" Height="23" Margin="630,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtastas_TextChanged"/>
-        <TextBlock x:Name="blmarca" HorizontalAlignment="Left" Margin="380,160,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Height="20" Width="160"/>
-        <TextBox x:Name="txtmarca" HorizontalAlignment="Left" Height="23" Margin="630,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtmarca_TextChanged"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="480,30,0,0" VerticalAlignment="Top" Width="105" Height="40" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.733"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+        <TextBlock x:Name="blmarca" HorizontalAlignment="Left" Margin="380,140,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Height="20" Width="160"/>
+        <TextBox x:Name="txtmarca" HorizontalAlignment="Left" Height="23" Margin="630,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtmarca_TextChanged"/>
+
         <Label x:Name="txtdesaparecer" Visibility="Hidden" Content="FAVOR DE COMPLETAR TODOS LOS DATOS " HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="45" Width="390" FontSize="20"/>
-        <TextBlock x:Name="txtcantidaddevasos" HorizontalAlignment="Left" Margin="380,210,0,0" TextWrapping="Wrap" Text="Cantidad  de vasos intercambiables" VerticalAlignment="Top" Height="23" Width="198"/>
-        <TextBox x:Name="txtvasos" HorizontalAlignment="Left" Height="23" Margin="630,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtvasos_TextChanged"/>
-        <Button x:Name="btncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,30,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" Height="45" Click="Btncancelar_Click_1">
+        <TextBlock x:Name="txtcantidaddevasos" HorizontalAlignment="Left" Margin="380,168,0,0" TextWrapping="Wrap" Text="Cantidad  de vasos intercambiables" VerticalAlignment="Top" Height="23" Width="198"/>
+        <TextBox x:Name="txtvasos" HorizontalAlignment="Left" Height="23" Margin="630,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtvasos_TextChanged"/>
+        <Button x:Name="btncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="580,305,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" Height="45" Click="Btncancelar_Click_1">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="1.045"/>
+                    <RotateTransform Angle="0.737"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
 
-        <TextBlock x:Name="txtpreciomaximo" HorizontalAlignment="Left" Margin="15,266,0,0" TextWrapping="Wrap" Text="Precio maximo a gastar:" VerticalAlignment="Top" Visibility="Visible"/>
-        <RadioButton x:Name="precio1" Content="$500-$700" HorizontalAlignment="Left" Margin="5,360,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-        <RadioButton x:Name="precio2" Content="$800-$1500" HorizontalAlignment="Left" Margin="130,360,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-        <RadioButton x:Name="precio3" Content="$1700-en adelante" HorizontalAlignment="Left" Margin="245,360,0,0" VerticalAlignment="Top" Visibility="Visible"/>
-        <TextBlock x:Name="txtseleccione" HorizontalAlignment="Left" Margin="10,315,0,0" TextWrapping="Wrap" Text="En caso de no saber con exactitud seleccione uno de los siguientes rangos:" VerticalAlignment="Top" Height="15" Width="405" Visibility="Visible"/>
-        <TextBlock x:Name="txtformadepago" HorizontalAlignment="Left" Margin="13,417,0,0" TextWrapping="Wrap" Text="Forma de pago:" VerticalAlignment="Top" Width="92" Visibility="Visible"/>
-        <ComboBox x:Name="cbformadepago" HorizontalAlignment="Left" Margin="110,417,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
+        <TextBlock x:Name="txtpreciomaximo" HorizontalAlignment="Left" Margin="23,202,0,0" TextWrapping="Wrap" Text="Precio maximo a gastar:" VerticalAlignment="Top" Visibility="Visible"/>
+        <RadioButton x:Name="precio1" Content="$500-$700" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <RadioButton x:Name="precio2" Content="$800-$1500" HorizontalAlignment="Left" Margin="135,333,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <RadioButton x:Name="precio3" Content="$1700-en adelante" HorizontalAlignment="Left" Margin="250,333,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock x:Name="txtseleccione" HorizontalAlignment="Left" Margin="15,288,0,0" TextWrapping="Wrap" Text="En caso de no saber con exactitud seleccione uno de los siguientes rangos:" VerticalAlignment="Top" Height="15" Width="405" Visibility="Visible"/>
+        <TextBlock x:Name="txtformadepago" HorizontalAlignment="Left" Margin="468,202,0,0" TextWrapping="Wrap" Text="Forma de pago:" VerticalAlignment="Top" Width="92" Visibility="Visible"/>
+        <ComboBox x:Name="cbformadepago" HorizontalAlignment="Left" Margin="565,202,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
             <ComboBoxItem>Targeta</ComboBoxItem>
             <ComboBoxItem>Efectivo</ComboBoxItem>
         </ComboBox>
-        <ComboBox x:Name="pago" HorizontalAlignment="Left" Margin="165,260,0,0" VerticalAlignment="Top" Width="150" Visibility="Visible" RenderTransformOrigin="0.333,0.214" Height="22" SelectionChanged="Pago_SelectionChanged">
+        <ComboBox x:Name="pago" HorizontalAlignment="Left" Margin="180,196,0,0" VerticalAlignment="Top" Width="150" Visibility="Visible" RenderTransformOrigin="0.333,0.214" Height="22" SelectionChanged="Pago_SelectionChanged">
             <ComboBoxItem Content="Seleccionar"/>
             <ComboBoxItem Content="Agregar por cuenta propia"/>
 
         </ComboBox>
-        <TextBox x:Name="txtpotencia_Copy1" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="345,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpotencia_Copy_TextChanged"/>
+        <TextBox x:Name="txtpotencia_Copy1" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="345,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" TextChanged="Txtpotencia_Copy_TextChanged"/>
+        <Button x:Name="btnguardar" Content="Guardar" HorizontalAlignment="Left" Margin="458,306,0,0" VerticalAlignment="Top" Width="102" Height="42" Click="Btnguardar_Click"/>
+        <CheckBox x:Name="c1" Content="3 Trozado" HorizontalAlignment="Left" Margin="149,259,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c2" Content="2 Molido" HorizontalAlignment="Left" Margin="243,259,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c3" Content="1 Mezclado" HorizontalAlignment="Left" Margin="47,259,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtpreciomaximo_Copy" HorizontalAlignment="Left" Margin="23,238,0,0" TextWrapping="Wrap" Text="Velocidades:" VerticalAlignment="Top" Visibility="Visible"/>
     </Grid>
 </UserControl>

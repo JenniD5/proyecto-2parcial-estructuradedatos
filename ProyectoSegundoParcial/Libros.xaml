@@ -19,10 +19,10 @@
         <RadioButton x:Name="_6" Content="Ficcion" HorizontalAlignment="Left" Margin="162,167,0,0" VerticalAlignment="Top" Height="15" Width="60"/>
         <RadioButton x:Name="_5" Content="Romance" HorizontalAlignment="Left" Margin="227,167,0,0" VerticalAlignment="Top" Height="15" Width="73"/>
         <RadioButton x:Name="_4" Content="Comedia" HorizontalAlignment="Left" Margin="305,167,0,0" VerticalAlignment="Top" Height="15" Width="95"/>
-        <TextBlock x:Name="lbledicion" HorizontalAlignment="Left" Margin="410,252,0,0" TextWrapping="Wrap" Text="Edicion:" VerticalAlignment="Top" Height="15" Width="65"/>
-        <TextBox x:Name="txtedicion" HorizontalAlignment="Left" Height="23" Margin="585,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtedicion_TextChanged"/>
-        <TextBlock x:Name="lblcantidad" HorizontalAlignment="Left" Margin="410,306,0,0" TextWrapping="Wrap" Text="Cantidad de libros:" VerticalAlignment="Top" Height="20" Width="110"/>
-        <ComboBox x:Name="cmbcantidadlibros" HorizontalAlignment="Left" Margin="585,308,0,0" VerticalAlignment="Top" Width="120">
+        <TextBlock x:Name="lbledicion" HorizontalAlignment="Left" Margin="410,282,0,0" TextWrapping="Wrap" Text="Edicion:" VerticalAlignment="Top" Height="15" Width="65"/>
+        <TextBox x:Name="txtedicion" HorizontalAlignment="Left" Height="23" Margin="585,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtedicion_TextChanged"/>
+        <TextBlock x:Name="lblcantidad" HorizontalAlignment="Left" Margin="410,335,0,0" TextWrapping="Wrap" Text="Cantidad de libros:" VerticalAlignment="Top" Height="20" Width="110"/>
+        <ComboBox x:Name="cmbcantidadlibros" HorizontalAlignment="Left" Margin="585,338,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>Trilogia</ComboBoxItem>
@@ -33,10 +33,10 @@
         <TextBlock x:Name="lblcolor" HorizontalAlignment="Left" Margin="30,279,0,0" TextWrapping="Wrap" Text="Color de la pasta:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtcolor" HorizontalAlignment="Left" Height="23" Margin="180,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtcolor_TextChanged"/>
         <TextBlock x:Name="lblpopularidad" HorizontalAlignment="Left" Margin="30,345,0,0" TextWrapping="Wrap" Text="Popularidad:" VerticalAlignment="Top" Height="15" Width="75"/>
-        <RadioButton x:Name="_1" Content="Alta" HorizontalAlignment="Left" Margin="30,385,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="_2" Content="Media" HorizontalAlignment="Left" Margin="105,385,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="_3" Content="Baja" HorizontalAlignment="Left" Margin="180,385,0,0" VerticalAlignment="Top"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="480,15,0,0" VerticalAlignment="Top" Width="105" Height="40" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+        <RadioButton x:Name="_1" Visibility="Hidden" Content="Alta" HorizontalAlignment="Left" Margin="30,385,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="_2" Visibility="Hidden" Content="Media" HorizontalAlignment="Left" Margin="105,385,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="_3" Visibility="Hidden" Content="Baja" HorizontalAlignment="Left" Margin="180,385,0,0" VerticalAlignment="Top"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="490,65,0,0" VerticalAlignment="Top" Width="105" Height="40" Visibility="Hidden" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -46,7 +46,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,15,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" Height="45" Click="Btncancelar_Click">
+        <Button x:Name="btncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="660,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" Height="45" Click="Btncancelar_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -58,6 +58,25 @@
         </Button>
         <TextBlock x:Name="lblsubgenero" HorizontalAlignment="Left" Margin="30,215,0,0" TextWrapping="Wrap" Text="Subgenero:" VerticalAlignment="Top" Height="20" Width="95"/>
         <TextBox x:Name="txtpaginas_Copy" HorizontalAlignment="Left" Height="23" Margin="180,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Txtpaginas_Copy_TextChanged"/>
+        <Button x:Name="btnguardar" Content="Guardar" HorizontalAlignment="Left" Margin="495,385,0,0" VerticalAlignment="Top" Width="105" Height="40" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.733"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ComboBox x:Name="cmbpopularidad" HorizontalAlignment="Left" Margin="125,338,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Alta</ComboBoxItem>
+            <ComboBoxItem>Meida</ComboBoxItem>
+            <ComboBoxItem>Baja</ComboBoxItem>
+        </ComboBox>
+        <TextBlock x:Name="lblaño_Copy" HorizontalAlignment="Left" Margin="410,199,0,0" TextWrapping="Wrap" Text="Importancia:" VerticalAlignment="Top" Height="20" Width="120"/>
+        <CheckBox x:Name="c1" Content="Historia" HorizontalAlignment="Left" Margin="420,235,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c2" Content="Escritor" HorizontalAlignment="Left" Margin="529,235,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="c3" Content="Portada" HorizontalAlignment="Left" Margin="635,235,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>

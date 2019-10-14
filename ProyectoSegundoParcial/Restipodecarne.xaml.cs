@@ -67,22 +67,7 @@ namespace ProyectoSegundoParcial
                 return;
 
             }
-            else if (string.IsNullOrEmpty(cmbcantidad.Text))
-            {
-
-                txtdesaparecer.Visibility = Visibility.Visible;
-
-                return;
-
-            }
-            else if (string.IsNullOrEmpty(cmbcantidd2.Text))
-            {
-
-                txtdesaparecer.Visibility = Visibility.Visible;
-
-                return;
-
-            }
+           
             else
             {
                 txtdesaparecer.Visibility = Visibility.Hidden;
@@ -105,6 +90,13 @@ namespace ProyectoSegundoParcial
                 extra2.Visibility = Visibility.Hidden;
                 cmbcantidad.Visibility = Visibility.Hidden;
                 cmbcantidd2.Visibility = Visibility.Hidden;
+                btcancelar.Visibility = Visibility.Hidden;
+                btngurdar.Visibility = Visibility.Hidden;
+                extra2_Copy.Visibility = Visibility.Hidden;
+                c1.Visibility = Visibility.Hidden;
+                c2.Visibility = Visibility.Hidden;
+                extra1_Copy.Visibility = Visibility.Hidden;
+
             }
         }
 
@@ -115,6 +107,32 @@ namespace ProyectoSegundoParcial
             txtkilos.Text = "";
             txtkilos_Copy.Text = "";
             txtlugar.Text = "";
+            txtdesaparecer.Visibility = Visibility.Hidden;
+            MessageBox.Show("Usted va a cancelar el proces");
+            txtdscripcioncarne.Visibility = Visibility.Hidden;
+            txtdscripcioncarne_Copy.Visibility = Visibility.Hidden;
+            txtkilos.Visibility = Visibility.Hidden;
+            txtkilos_Copy.Visibility = Visibility.Hidden;
+            txtlugar.Visibility = Visibility.Hidden;
+            lbextra3.Visibility = Visibility.Hidden;
+            lbl2.Visibility = Visibility.Hidden;
+            lbl3.Visibility = Visibility.Hidden;
+            lbl4.Visibility = Visibility.Hidden;
+            lblc.Visibility = Visibility.Hidden;
+            lblcanti.Visibility = Visibility.Hidden;
+            lbldeccopy.Visibility = Visibility.Hidden;
+            lbllugar.Visibility = Visibility.Hidden;
+            lblseleccion.Visibility = Visibility.Hidden;
+            extra1.Visibility = Visibility.Hidden;
+            extra2.Visibility = Visibility.Hidden;
+            cmbcantidad.Visibility = Visibility.Hidden;
+            cmbcantidd2.Visibility = Visibility.Hidden;
+            btcancelar.Visibility = Visibility.Hidden;
+            btngurdar.Visibility = Visibility.Hidden;
+            extra2_Copy.Visibility = Visibility.Hidden;
+            c1.Visibility = Visibility.Hidden;
+            c2.Visibility = Visibility.Hidden;
+            extra1_Copy.Visibility = Visibility.Hidden;
 
         }
 

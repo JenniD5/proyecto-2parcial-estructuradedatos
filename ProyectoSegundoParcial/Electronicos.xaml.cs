@@ -130,14 +130,7 @@ namespace ProyectoSegundoParcial
                     return;
 
                 }
-                else if (string.IsNullOrEmpty(cmbtipos.Text))
-                {
-
-                    txtdesaparecer.Visibility = Visibility.Visible;
-
-                    return;
-
-                }
+               
                 
 
                 else
@@ -162,6 +155,12 @@ namespace ProyectoSegundoParcial
                 cmbtipos.Visibility = Visibility.Hidden;
                 lborden.Visibility = Visibility.Hidden;
                 ll1.Visibility = Visibility.Hidden;
+                btncan.Visibility = Visibility.Hidden;
+                btng.Visibility = Visibility.Hidden;
+                c1.Visibility = Visibility.Hidden;
+                c2.Visibility = Visibility.Hidden;
+                c3.Visibility = Visibility.Hidden;
+                lblmarca_Copy.Visibility = Visibility.Hidden;
             }
 
         }
@@ -175,6 +174,32 @@ namespace ProyectoSegundoParcial
             txttienda.Text = "";
             txttienda_Copy.Text = "";
             cmbtipos.Text = "";
+            txtdesaparecer.Visibility = Visibility.Hidden;
+            MessageBox.Show("se a guardado con exito");
+            txtdescripcion.Visibility = Visibility.Hidden;
+            txtdescripcion_Copy.Visibility = Visibility.Hidden;
+            txtgarantia.Visibility = Visibility.Hidden;
+            txtmarca.Visibility = Visibility.Hidden;
+            txttienda.Visibility = Visibility.Hidden;
+            txttienda_Copy.Visibility = Visibility.Hidden;
+            lbgarantia.Visibility = Visibility.Hidden;
+            lbl2.Visibility = Visibility.Hidden;
+            lbl3.Visibility = Visibility.Hidden;
+            lbldescription.Visibility = Visibility.Hidden;
+            lblextra1.Visibility = Visibility.Hidden;
+            lblextra2.Visibility = Visibility.Hidden;
+            lblmarca.Visibility = Visibility.Hidden;
+            lbltienda.Visibility = Visibility.Hidden;
+            lbltipo.Visibility = Visibility.Hidden;
+            cmbtipos.Visibility = Visibility.Hidden;
+            lborden.Visibility = Visibility.Hidden;
+            ll1.Visibility = Visibility.Hidden;
+            btncan.Visibility = Visibility.Hidden;
+            btng.Visibility = Visibility.Hidden;
+            c1.Visibility = Visibility.Hidden;
+            c2.Visibility = Visibility.Hidden;
+            c3.Visibility = Visibility.Hidden;
+            lblmarca_Copy.Visibility = Visibility.Hidden;
         }
     }
 }

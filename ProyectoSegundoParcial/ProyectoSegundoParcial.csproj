@@ -64,6 +64,9 @@
     <Compile Include="Frutas y verduras.xaml.cs">
       <DependentUpon>Frutas y verduras.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HigienePersonal.xaml.cs">
+      <DependentUpon>HigienePersonal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Restipodecarne.xaml.cs">
       <DependentUpon>Restipodecarne.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Frutas y verduras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HigienePersonal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

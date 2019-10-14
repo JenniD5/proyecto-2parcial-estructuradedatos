@@ -53,6 +53,9 @@ namespace ProyectoSegundoParcial
                 case 5:
                     gridprincipal.Children.Add(new Congelados());
                     break;
+                case 6:
+                    gridprincipal.Children.Add(new HigienePersonal());
+                    break;
                 default:
                     break;
             }
